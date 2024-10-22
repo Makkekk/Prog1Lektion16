@@ -16,7 +16,7 @@ public class Gui extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Opgave 3");
+        primaryStage.setTitle("Opgave 4");
         GridPane pane = new GridPane();
         this.initContent(pane);
         Scene scene = new Scene(pane);
@@ -37,16 +37,16 @@ public class Gui extends Application {
 
 
         Label lblname2 = new Label("Fahrenheit");
-        pane.add(lblname2, 1, 0);
         lblname.setPadding(new Insets(5));
-        pane.add(txfFahrenheit,1, 1);
+        pane.add(lblname2, 2, 0);
+        pane.add(txfFahrenheit,2, 1);
 
         Button btnFahrenheit = new Button(">>");
-        pane.add(btnFahrenheit, 2, 1);
+        pane.add(btnFahrenheit, 1, 1);
         btnFahrenheit.setOnAction(event -> this.convertToFahrenheit());
 
         Button btnCelcius = new Button("<<");
-        pane.add(btnCelcius, 2, 2);
+        pane.add(btnCelcius, 1, 2);
         btnCelcius.setOnAction(event -> this.convertToCelcius());
 
     }
