@@ -7,9 +7,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-import org.w3c.dom.Text;
-
-import java.util.EventObject;
 
 
 public class Gui extends Application {

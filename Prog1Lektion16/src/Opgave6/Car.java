@@ -15,18 +15,22 @@ public class Car {
     }
 
     public String getModel() {
+
         return model;
     }
 
     public String getMærke() {
+
         return mærke;
     }
 
     public int getPrice() {
+
         return price;
     }
 
     public boolean isElektrisk() {
+
         return elektrisk;
     }
 
